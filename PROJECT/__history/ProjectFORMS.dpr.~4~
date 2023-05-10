@@ -1,0 +1,17 @@
+program ProjectFORMS;
+
+uses
+  Forms,
+  ULogin in '..\FORMS\ULogin.pas' {FrmLogin},
+  UDM in '..\FORMS\UDM.pas' {DM: TDataModule},
+  UMenu in '..\FORMS\UMenu.pas' {FrmMenu};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TFrmLogin, FrmLogin);
+  Application.CreateForm(TDM, DM);
+  Application.CreateForm(TFrmMenu, FrmMenu);
+  Application.Run;
+end.

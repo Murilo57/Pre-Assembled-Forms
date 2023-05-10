@@ -1,0 +1,117 @@
+unit UCadastro;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, Buttons, StdCtrls, Grids, DBGrids, Mask, DBCtrls, ExtCtrls;
+
+type
+  TFrmCadastro = class(TForm)
+    Panel1: TPanel;
+    lblNome: TLabel;
+    edtNome: TDBEdit;
+    lblEmail: TLabel;
+    edtEmail: TDBEdit;
+    lblCPF: TLabel;
+    edtCPF: TDBEdit;
+    lblCidade: TLabel;
+    edtCidade: TDBEdit;
+    lblBairro: TLabel;
+    edtBairro: TDBEdit;
+    DBGrid1: TDBGrid;
+    edtPesquisa: TEdit;
+    Pesquisa: TLabel;
+    btnNovo: TSpeedButton;
+    btnSalvar: TSpeedButton;
+    btnEditar: TSpeedButton;
+    btnDeletar: TSpeedButton;
+    btnCancelar: TSpeedButton;
+    btnSair: TSpeedButton;
+    Label1: TLabel;
+    DBEdit1: TDBEdit;
+    lblDataCad: TLabel;
+    edtDataCad: TDBEdit;
+    procedure edtEmailKeyPress(Sender: TObject; var Key: Char);
+    procedure FormKeyPress(Sender: TObject; var Key: Char);
+    procedure edtPesquisaChange(Sender: TObject);
+    procedure btnCancelarClick(Sender: TObject);
+    procedure btnDeletarClick(Sender: TObject);
+    procedure btnEditarClick(Sender: TObject);
+    procedure btnSalvarClick(Sender: TObject);
+    procedure btnNovoClick(Sender: TObject);
+    procedure btnSairClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FrmCadastro: TFrmCadastro;
+
+implementation
+
+uses UDM;
+
+{$R *.dfm}
+
+procedure TFrmCadastro.btnCancelarClick(Sender: TObject);
+begin
+  dm.cdsCadastro.CancelUpdates;
+end;
+
+procedure TFrmCadastro.btnDeletarClick(Sender: TObject);
+begin
+  dm.cdsCadastro.Delete;
+  dm.cdsCadastro.ApplyUpdates(0);
+end;
+
+procedure TFrmCadastro.btnEditarClick(Sender: TObject);
+begin
+  dm.cdsCadastro.Edit;
+end;
+
+procedure TFrmCadastro.btnNovoClick(Sender: TObject);
+begin
+  dm.cdsCadastro.Append;
+end;
+
+procedure TFrmCadastro.btnSairClick(Sender: TObject);
+begin
+  Application.Terminate;
+end;
+
+procedure TFrmCadastro.btnSalvarClick(Sender: TObject);
+begin
+  dm.cdsCadastro.Post;
+  dm.cdsCadastro.ApplyUpdates(0);
+end;
+
+procedure TFrmCadastro.edtEmailKeyPress(Sender: TObject; var Key: Char);
+begin
+  if Key = #13 then
+    btnSalvarClick(Sender);
+end;
+
+procedure TFrmCadastro.edtPesquisaChange(Sender: TObject);
+begin
+  dm.cdsCadastro.Close;
+  dm.sqlCadastro.CommandText := 'SELECT NOME FROM CADASTRO WHERE NOME LIKE ''%'+edtPesquisa.Text+'%''';
+  dm.cdsCadastro.Open;
+
+  if edtPesquisa.Text = '' then
+  begin
+    dm.cdsCadastro.Close;
+    dm.sqlCadastro.CommandText := 'SELECT * FROM CADASTRO';
+    dm.cdsCadastro.Open;
+  end;
+end;
+
+procedure TFrmCadastro.FormKeyPress(Sender: TObject; var Key: Char);
+begin
+  if Key = #27 then
+    Close;
+end;
+
+end.

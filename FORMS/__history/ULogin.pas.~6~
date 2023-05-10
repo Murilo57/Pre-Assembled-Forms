@@ -1,0 +1,45 @@
+unit ULogin;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, Buttons, StdCtrls, ExtCtrls;
+
+type
+  TFrmLogin = class(TForm)
+    pnlFundo: TPanel;
+    pnlLogin: TPanel;
+    edtLogin: TEdit;
+    edtSenha: TEdit;
+    lblLogin: TLabel;
+    lblSenha: TLabel;
+    btnLogin: TSpeedButton;
+    btnSair: TSpeedButton;
+    procedure btnLoginClick(Sender: TObject);
+    procedure btnSairClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FrmLogin: TFrmLogin;
+
+implementation
+
+{$R *.dfm}
+
+procedure TFrmLogin.btnLoginClick(Sender: TObject);
+begin
+  dm.cdsLogin
+end;
+
+procedure TFrmLogin.btnSairClick(Sender: TObject);
+begin
+  Application.Terminate
+
+end;
+
+end.

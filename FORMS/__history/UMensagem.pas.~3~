@@ -1,0 +1,57 @@
+unit UMensagem;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, ExtCtrls, StdCtrls, Buttons, jpeg, JvExExtCtrls, JvExtComponent,
+  JvPanel;
+
+type
+  TfrmMSG = class(TForm)
+    pnlPrincipal: TPanel;
+    pnlImg: TPanel;
+    pnlBotoes: TPanel;
+    imgAviso: TImage;
+    imgCheck: TImage;
+    btnSim: TBitBtn;
+    btnOk: TBitBtn;
+    btnNao: TBitBtn;
+    pnlMemo: TPanel;
+    lblTitulo: TLabel;
+    msg: TJvPanel;
+    imgX: TImage;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+    procedure Aviso(Titulo, Mensagem : String);
+    procedure Correto(Titutlo, Mensagem : String);
+    procedure Erro(Titulo, Mensagem : String);
+  end;
+
+var
+  frmMSG: TfrmMSG;
+
+implementation
+
+{$R *.dfm}
+
+{ TfrmMSG }
+
+procedure TfrmMSG.Aviso(Titulo, Mensagem: String);
+begin
+
+end;
+
+procedure TfrmMSG.Correto(Titutlo, Mensagem: String);
+begin
+
+end;
+
+procedure TfrmMSG.Erro(Titulo, Mensagem: String);
+begin
+
+end;
+
+end.

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/03/28 09:50:04.839.pas,C:\Documents and Settings\Aldo\Meus documentos\Borland Studio Projects\Unit1.pas=C:\Documents and Settings\Aldo\Meus documentos\Projetos Delphi\Forms Pre Montados\FORMS\ULogin.pas</Transaction>
+    <Transaction>2023/03/28 09:50:04.839.dfm,C:\Documents and Settings\Aldo\Meus documentos\Borland Studio Projects\Unit1.dfm=C:\Documents and Settings\Aldo\Meus documentos\Projetos Delphi\Forms Pre Montados\FORMS\ULogin.dfm</Transaction>
+    <Transaction>2023/03/28 09:50:17.838.bdsproj,C:\Documents and Settings\Aldo\Meus documentos\Borland Studio Projects\Project1.bdsproj=C:\Documents and Settings\Aldo\Meus documentos\Projetos Delphi\Forms Pre Montados\PROJECT\ProjectFORMS.bdsproj</Transaction>
+    <Transaction>2023/03/28 10:11:29.417.pas,C:\Documents and Settings\Aldo\Meus documentos\Projetos Delphi\Forms Pre Montados\PROJECT\Unit1.pas=C:\Documents and Settings\Aldo\Meus documentos\Projetos Delphi\Forms Pre Montados\FORMS\UDM.pas</Transaction>
+    <Transaction>2023/03/28 10:11:29.417.dfm,C:\Documents and Settings\Aldo\Meus documentos\Projetos Delphi\Forms Pre Montados\PROJECT\Unit1.dfm=C:\Documents and Settings\Aldo\Meus documentos\Projetos Delphi\Forms Pre Montados\FORMS\UDM.dfm</Transaction>
+    <Transaction>2023/03/28 10:16:04.377.pas,C:\Documents and Settings\Aldo\Meus documentos\Projetos Delphi\Forms Pre Montados\PROJECT\Unit1.pas=C:\Documents and Settings\Aldo\Meus documentos\Projetos Delphi\Forms Pre Montados\FORMS\UMenu.pas</Transaction>
+    <Transaction>2023/03/28 10:16:04.377.dfm,C:\Documents and Settings\Aldo\Meus documentos\Projetos Delphi\Forms Pre Montados\PROJECT\Unit1.dfm=C:\Documents and Settings\Aldo\Meus documentos\Projetos Delphi\Forms Pre Montados\FORMS\UMenu.dfm</Transaction>
+    <Transaction>2023/03/28 10:55:59.806.pas,C:\Documents and Settings\Aldo\Meus documentos\Projetos Delphi\Forms Pre Montados\PROJECT\Unit1.pas=C:\Documents and Settings\Aldo\Meus documentos\Projetos Delphi\Forms Pre Montados\FORMS\UCadastro.pas</Transaction>
+    <Transaction>2023/03/28 10:55:59.806.dfm,C:\Documents and Settings\Aldo\Meus documentos\Projetos Delphi\Forms Pre Montados\PROJECT\Unit1.dfm=C:\Documents and Settings\Aldo\Meus documentos\Projetos Delphi\Forms Pre Montados\FORMS\UCadastro.dfm</Transaction>
+    <Transaction>2023/03/31 08:39:35.284.pas,C:\Documents and Settings\Aldo\Meus documentos\Projetos Delphi\Forms Pre Montados\PROJECT\Unit1.pas=C:\Documents and Settings\Aldo\Meus documentos\Projetos Delphi\Forms Pre Montados\FORMS\UMensagem.pas</Transaction>
+    <Transaction>2023/03/31 08:39:35.284.dfm,C:\Documents and Settings\Aldo\Meus documentos\Projetos Delphi\Forms Pre Montados\PROJECT\Unit1.dfm=C:\Documents and Settings\Aldo\Meus documentos\Projetos Delphi\Forms Pre Montados\FORMS\UMensagem.dfm</Transaction>
+  </Transactions>
+</BorlandProject>

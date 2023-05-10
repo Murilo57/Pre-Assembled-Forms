@@ -1,0 +1,36 @@
+object frmMSG: TfrmMSG
+  Left = 0
+  Top = 0
+  Caption = 'Mensagem'
+  ClientHeight = 245
+  ClientWidth = 786
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 786
+    Height = 245
+    Align = alClient
+    TabOrder = 0
+    ExplicitLeft = 265
+    ExplicitTop = 230
+    ExplicitWidth = 185
+    ExplicitHeight = 41
+    object Panel2: TPanel
+      Left = 1
+      Top = 190
+      Width = 784
+      Height = 54
+      Align = alBottom
+      TabOrder = 0
+    end
+  end
+end

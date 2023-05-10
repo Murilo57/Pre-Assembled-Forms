@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/03/17 11:38:03.712.pas,C:\Documents and Settings\Aldo\Meus documentos\Borland Studio Projects\Unit1.pas=C:\Documents and Settings\Aldo\Meus documentos\Projetos Delphi\Sistema-Restaurante\FORMS\ULogin.pas</Transaction>
+    <Transaction>2023/03/17 11:38:03.712.dfm,C:\Documents and Settings\Aldo\Meus documentos\Borland Studio Projects\Unit1.dfm=C:\Documents and Settings\Aldo\Meus documentos\Projetos Delphi\Sistema-Restaurante\FORMS\ULogin.dfm</Transaction>
+    <Transaction>2023/03/17 11:38:18.974.bdsproj,C:\Documents and Settings\Aldo\Meus documentos\Borland Studio Projects\Project1.bdsproj=C:\Documents and Settings\Aldo\Meus documentos\Projetos Delphi\Sistema-Restaurante\PROJECT\ProjSistemaRestaurante.bdsproj</Transaction>
+  </Transactions>
+</BorlandProject>
